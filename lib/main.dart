@@ -1,11 +1,14 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_mobile_vision/flutter_mobile_vision.dart';
 import 'dart:async';
 
+import 'package:facerecognition/face_detal.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_mobile_vision/flutter_mobile_vision.dart';
 import 'barcode_detail.dart';
-import 'face_detal.dart';
 import 'ocr_text_detail.dart';
 
+///
+///
+///
 void main() => runApp(MyApp());
 
 ///
@@ -15,6 +18,10 @@ class MyApp extends StatefulWidget {
   @override
   _MyAppState createState() => _MyAppState();
 }
+
+///
+///
+///
 class _MyAppState extends State<MyApp> {
   int _cameraBarcode = FlutterMobileVision.CAMERA_BACK;
   int _onlyFormatBarcode = Barcode.ALL_FORMATS;
@@ -55,7 +62,11 @@ class _MyAppState extends State<MyApp> {
           _previewFace = previewSizes[_cameraFace].first;
         }));
   }
- @override
+
+  ///
+  ///
+  ///
+  @override
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
